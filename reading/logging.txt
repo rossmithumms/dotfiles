@@ -1,0 +1,6 @@
+# LOGGING
+https://www.digitalocean.com/community/tutorials/how-to-centralize-logs-with-rsyslog-logstash-and-elasticsearch-on-ubuntu-14-04
+https://www.digitalocean.com/community/tutorials/how-to-view-and-configure-linux-logs-on-ubuntu-and-centos
+https://www.loggly.com/ultimate-guide/linux-logging-basics/
+
+
