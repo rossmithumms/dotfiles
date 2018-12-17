@@ -41,5 +41,5 @@ endif
 " #############################################################
 
 " LITTLE STUFF ################################################
-set number " show line numbers by default
-
+set number                     " show line numbers by default
+set backspace=indent,eol,start " allow backspace anywhere
