@@ -10,6 +10,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'elzr/vim-json'
+" Plugin 'tpope/vim-jdaddy'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -33,11 +35,23 @@ inoremap <C-a> <C-o>0
 " YANK TO OSX CLIPBOARD ########################################
 if has("clipboard")
   set clipboard=unnamed " copy to the system clipboard
-
   if has("unnamedplus") " X11 support
     set clipboard+=unnamedplus
   endif
 endif
+" #############################################################
+
+" SYNTAX HIGHLIGHTING #########################################
+syntax enable
+colorscheme slate
+set termguicolors
+" #############################################################
+
+" SYNTAX HIGHLIGHTING #########################################
+set autoindent
+set smartindent
+set expandtab
+set shiftwidth=2
 " #############################################################
 
 " LITTLE STUFF ################################################
