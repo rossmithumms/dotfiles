@@ -11,7 +11,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'elzr/vim-json'
-" Plugin 'tpope/vim-jdaddy'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -27,6 +26,13 @@ let g:vim_markdown_toc_autofit = 1
 let g:vim_markdown_conceal = 2 " why does this not conceal URLs?
 " ##############################################################
 
+" VANILLA INDENT RULES #########################################
+set autoindent
+set smartindent
+set expandtab
+set shiftwidth=2
+" ##############################################################
+
 " JUMP TO END/START OF LINE, INSERT MODE #######################
 inoremap <C-e> <C-o>$
 inoremap <C-a> <C-o>0
@@ -39,21 +45,14 @@ if has("clipboard")
     set clipboard+=unnamedplus
   endif
 endif
-" #############################################################
+" ##############################################################
 
-" SYNTAX HIGHLIGHTING #########################################
+" SYNTAX HIGHLIGHTING ##########################################
 syntax enable
 colorscheme slate
 set termguicolors
-" #############################################################
+" ##############################################################
 
-" SYNTAX HIGHLIGHTING #########################################
-set autoindent
-set smartindent
-set expandtab
-set shiftwidth=2
-" #############################################################
-
-" LITTLE STUFF ################################################
+" LITTLE STUFF #################################################
 set number                     " show line numbers by default
 set backspace=indent,eol,start " allow backspace anywhere
