@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# copy dotfiles into project
+cp ~/.{vimrc,bashrc,tmux.conf} ./dotfiles/
+git add ./dotfiles/*
